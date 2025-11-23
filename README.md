@@ -1,8 +1,20 @@
 # MCF - API REST
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Online Demo](https://img.shields.io/badge/Live-Demo-blue)](https://lemxvos-mcf.onrender.com)
+
 
 A simple Java REST API that provides various math and physics formulas and solves them for the client. It has a basic frontend with HTML+CSS+JS and a backend with Java+SpringBoot.
+
+---
+
+## 🌐 Live Demo
+
+The API is online for tests on:
+
+🔗 **https://lemxvos-mcf.onrender.com**
+
+> Frontend is include so you can test endpoints, recipes, direct on your browser.
 
 ---
 
