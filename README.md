@@ -60,11 +60,12 @@ A simple Java REST API that provides various math and physics formulas and solve
 │   └── test
 │       └── java/com/lemavos/mcf/McfApplicationTests.java
 └── target
-    ├── classes
-    ├── generated-sources
-    ├── maven-status
-    ├── mcf-0.0.1-SNAPSHOT.jar
-    └── test-classes
+|   ├── classes
+|   ├── generated-sources
+|   ├── maven-status
+|   ├── mcf-0.0.1-SNAPSHOT.jar
+|   └── test-classes
+└── Dockerfile
 ```
 
 ---
