@@ -22,7 +22,7 @@ import com.lemavos.mcf.service.mathUtils.shapes.Square;
 import com.lemavos.mcf.util.ValueValidator;
 
 @RestController
-@RequestMapping("/math")
+@RequestMapping("api/math")
 public class MathController {
 
     // Detached
