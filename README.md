@@ -16,10 +16,6 @@ A simple Java REST API that provides various math and physics formulas and solve
 ## 🧩 Project Structure
 ```
 .
-├── client
-│   ├── index.html
-│   ├── main.js
-│   └── style.css
 ├── mvnw
 ├── mvnw.cmd
 ├── pom.xml
@@ -59,7 +55,7 @@ A simple Java REST API that provides various math and physics formulas and solve
 │   │   |       └── index.html
 │   └── test
 │       └── java/com/lemavos/mcf/McfApplicationTests.java
-└── target
+├── target
 │   ├── classes
 │   ├── generated-sources
 │   ├── maven-status
