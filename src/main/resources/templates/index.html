@@ -6,19 +6,19 @@
   <title>MCF - TEST</title>
   <link rel="stylesheet" th:href="@{/css/style.css}">
 </head>
+
 <body>
 
-    <!-- Botão menu math -->
-  <button id="physicBtn">☰ Phycis Menu</button>
-
-  <!-- Botão menu math -->
-  <button id="mathBtn">☰ Math Menu</button>
+  <!-- Botões -->
+  <button id="mathBtn" class="floating-btn">☰ Math Menu</button>
+  <button id="physicBtn" class="floating-btn second">☰ Physics Menu</button>
 
   <!-- Overlay -->
   <div id="overlay"></div>
 
   <!-- Sidebar -->
   <div id="sidebar" class="closed">
+
     <h2>📐 General</h2>
     <div class="endpoint" data-url="/api/math/bhaskara?a=1&b=-3&c=2">Bhaskara</div>
     <div class="endpoint" data-url="/api/math/factorial?number=5">Factorial</div>
@@ -46,15 +46,16 @@
     <div class="endpoint" data-url="/api/math/surface/sphere?radius=4">Sphere Surface</div>
     <div class="endpoint" data-url="/api/math/volume/trapezoidalprism?a=5&b=3&h=4&length=6">Trapezoidal Prism Volume</div>
     <div class="endpoint" data-url="/api/math/surface/trapezoidalprism?a=5&b=3&h=4&length=6">Trapezoidal Prism Surface</div>
+
   </div>
 
-  <!-- Main -->
-  <div id="main">
+  <!-- Conteúdo -->
+  <main id="main">
     <input id="apiBase" type="text" placeholder="Ex: http://localhost:8080">
     <input id="urlInput" type="text" placeholder="Full URL will appear here...">
     <button id="sendBtn">Send Request</button>
     <div id="response">Waiting for request...</div>
-  </div>
+  </main>
 
   <script th:src="@{/js/script.js}"></script>
 </body>
