@@ -6,7 +6,7 @@ const endpoints = document.querySelectorAll(".endpoint");
 
     const sidebar = document.getElementById("sidebar");
     const overlay = document.getElementById("overlay");
-    const menuBtn = document.getElementById("menuBtn");
+    const mathBtn = document.getElementById("mathBtn");
 
     function toggleSidebar() {
       const isClosed = sidebar.classList.contains("closed");
@@ -15,7 +15,7 @@ const endpoints = document.querySelectorAll(".endpoint");
       sidebar.classList.toggle("active", isClosed);
     }
 
-    menuBtn.addEventListener("click", toggleSidebar);
+    mathBtn.addEventListener("click", toggleSidebar);
     overlay.addEventListener("click", toggleSidebar);
 
     // Base da API
