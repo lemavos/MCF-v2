@@ -15,7 +15,7 @@ The API is online for tests on:
 🔗 **https://lemxvos-mcf.onrender.com**
 
 > Frontend is include so you can test endpoints, recipes, direct on your browser.
-
+> Just change the base url to `https://lemxvos-mcf.onrender.com` if your base url are `http://localhost:8080`
 ---
 
 ## 🚀 Features
