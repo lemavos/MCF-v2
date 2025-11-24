@@ -6,19 +6,18 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.lemavos.mcf.service.mathUtils.Bhaskara;
-import com.lemavos.mcf.service.mathUtils.Factorial;
-import com.lemavos.mcf.service.mathUtils.geometricSolids.Cube;
-import com.lemavos.mcf.service.mathUtils.geometricSolids.Parallelepiped;
-import com.lemavos.mcf.service.mathUtils.geometricSolids.Sphere;
-import com.lemavos.mcf.service.mathUtils.geometricSolids.TrapezoidalPrism;
-import com.lemavos.mcf.service.mathUtils.pythagorasTheorem.Hypotenuse;
-import com.lemavos.mcf.service.mathUtils.pythagorasTheorem.Leg;
-import com.lemavos.mcf.service.mathUtils.shapes.Circle;
-import com.lemavos.mcf.service.mathUtils.shapes.Diamond;
-import com.lemavos.mcf.service.mathUtils.shapes.Rectangle;
-import com.lemavos.mcf.service.mathUtils.shapes.Square;
-
+import com.lemavos.mcf.service.mathServices.Bhaskara;
+import com.lemavos.mcf.service.mathServices.Factorial;
+import com.lemavos.mcf.service.mathServices.geometricSolids.Cube;
+import com.lemavos.mcf.service.mathServices.geometricSolids.Parallelepiped;
+import com.lemavos.mcf.service.mathServices.geometricSolids.Sphere;
+import com.lemavos.mcf.service.mathServices.geometricSolids.TrapezoidalPrism;
+import com.lemavos.mcf.service.mathServices.pythagorasTheorem.Hypotenuse;
+import com.lemavos.mcf.service.mathServices.pythagorasTheorem.Leg;
+import com.lemavos.mcf.service.mathServices.shapes.Circle;
+import com.lemavos.mcf.service.mathServices.shapes.Diamond;
+import com.lemavos.mcf.service.mathServices.shapes.Rectangle;
+import com.lemavos.mcf.service.mathServices.shapes.Square;
 import com.lemavos.mcf.util.ValueValidator;
 
 @RestController

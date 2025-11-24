@@ -1,4 +1,4 @@
-package com.lemavos.mcf.service.mathUtils.geometricSolids;
+package com.lemavos.mcf.service.mathServices.geometricSolids;
 
 public class TrapezoidalPrism {
     public static double calculateVolumeTrapezoidalPrism(double a, double b, double h, double length) {

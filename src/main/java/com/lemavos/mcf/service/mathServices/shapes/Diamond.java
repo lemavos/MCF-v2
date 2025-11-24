@@ -1,4 +1,4 @@
-package com.lemavos.mcf.service.mathUtils.shapes;
+package com.lemavos.mcf.service.mathServices.shapes;
 
 public class Diamond {
     public static String calculateDiamondArea(double diagonal1, double diagonal2){

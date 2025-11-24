@@ -1,4 +1,4 @@
-package com.lemavos.mcf.service.mathUtils.geometricSolids;
+package com.lemavos.mcf.service.mathServices.geometricSolids;
 
 public class Cube {
     public static double calculateVolumeCube(double side) {
