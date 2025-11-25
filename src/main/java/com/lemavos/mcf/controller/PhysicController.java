@@ -21,4 +21,13 @@ public class PhysicController {
         ValueValidator.aEqualZero(mass);
         return ResponseEntity.ok(Force.calculateForce(mass, acceleration));
     }
+
+    // Kinect Energy
+    @GetMapping("/force")
+    public ResponseEntity<?> KinectEnergy(@RequestParam double mass,
+                                             @RequestParam double velocity) {
+        ValueValidator.isNull(mass, velocity);
+        ValueValidator.aEqualZero(mass);
+        return ResponseEntity.ok(Force.calculateForce(mass, velocity));
+    }
 }
