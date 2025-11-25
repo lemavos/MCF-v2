@@ -1,5 +1,8 @@
 package com.lemavos.mcf.service.mathServices.pythagorasTheorem;
 
+import org.springframework.stereotype.Service;
+
+@Service
 public class Hypotenuse {
     public static String calculateHypotenuse(double leg1, double leg2){
         if (leg1 <= 0 || leg2 <= 0){

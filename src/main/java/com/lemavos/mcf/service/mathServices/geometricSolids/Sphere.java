@@ -1,5 +1,8 @@
 package com.lemavos.mcf.service.mathServices.geometricSolids;
 
+import org.springframework.stereotype.Service;
+
+@Service
 public class Sphere {
     public static double calculateVolumeSphere(double radius) {
         return (4.0 / 3.0) * Math.PI * Math.pow(radius, 3);

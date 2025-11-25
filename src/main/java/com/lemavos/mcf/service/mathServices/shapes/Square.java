@@ -1,5 +1,7 @@
 package com.lemavos.mcf.service.mathServices.shapes;
+import org.springframework.stereotype.Service;
 
+@Service
 public class Square {
     public static String calculateSquareArea(double side){
         if (side <= 0){

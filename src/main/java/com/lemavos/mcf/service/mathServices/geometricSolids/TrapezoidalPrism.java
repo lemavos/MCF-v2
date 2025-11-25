@@ -1,5 +1,8 @@
 package com.lemavos.mcf.service.mathServices.geometricSolids;
 
+import org.springframework.stereotype.Service;
+
+@Service
 public class TrapezoidalPrism {
     public static double calculateVolumeTrapezoidalPrism(double a, double b, double h, double length) {
         double areaBase = ((a + b) / 2) * h;

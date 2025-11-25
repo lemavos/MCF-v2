@@ -1,5 +1,8 @@
 package com.lemavos.mcf.service.mathServices.shapes;
 
+import org.springframework.stereotype.Service;
+
+@Service
 public class Circle {
     public static String calculateCircleArea(double radius){
         if (radius <= 0 ){

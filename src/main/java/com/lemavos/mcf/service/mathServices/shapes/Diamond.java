@@ -1,5 +1,8 @@
 package com.lemavos.mcf.service.mathServices.shapes;
 
+import org.springframework.stereotype.Service;
+
+@Service
 public class Diamond {
     public static String calculateDiamondArea(double diagonal1, double diagonal2){
         if (diagonal1 <= 0 || diagonal2 <= 0){

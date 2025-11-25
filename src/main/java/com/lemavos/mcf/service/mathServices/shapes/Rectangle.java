@@ -1,5 +1,8 @@
 package com.lemavos.mcf.service.mathServices.shapes;
 
+import org.springframework.stereotype.Service;
+
+@Service
 public class Rectangle {
     public static String calculateRectangleArea(double length, double width){
         if (length <= 0 || width <= 0){

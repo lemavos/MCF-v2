@@ -1,5 +1,8 @@
 package com.lemavos.mcf.service.physicServices.energy;
 
+import org.springframework.stereotype.Service;
+
+@Service
 public class KineticEnergy {
     public static String calculateKinectEnergy(double mass, double velocity){
         if (mass <= 0){

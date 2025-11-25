@@ -1,5 +1,8 @@
 package com.lemavos.mcf.service.mathServices;
 
+import org.springframework.stereotype.Service;
+
+@Service
 public class Bhaskara {
     public static String calculateBhaskara(double a, double b, double c) {
         double delta = calculateDelta(a, b, c);
