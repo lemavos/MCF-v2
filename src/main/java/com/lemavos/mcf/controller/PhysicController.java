@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.lemavos.mcf.service.physicServices.Force;
+import com.lemavos.mcf.service.physicServices.energy.KineticEnergy;
+import com.lemavos.mcf.service.physicServices.energy.MechanicalEnergy;
 import com.lemavos.mcf.util.ValueValidator;
 
 @RestController
@@ -23,11 +25,19 @@ public class PhysicController {
     }
 
     // Kinect Energy
-    @GetMapping("/force")
-    public ResponseEntity<?> KinectEnergy(@RequestParam double mass,
+    @GetMapping("/energy/kinetic")
+    public ResponseEntity<?> KineticEnergy(@RequestParam double mass,
                                              @RequestParam double velocity) {
         ValueValidator.isNull(mass, velocity);
         ValueValidator.aEqualZero(mass);
-        return ResponseEntity.ok(Force.calculateForce(mass, velocity));
+        return ResponseEntity.ok(KineticEnergy.calculateKineticEnergy(mass, velocity));
+    }
+
+    // Mechanical Energy
+    @GetMapping("/energy/mechanical")
+    public ResponseEntity<?> MechanicalEnergy(@RequestParam double kineticEnergy,
+                                             @RequestParam double potentialEnergy) {
+        ValueValidator.isNull(kineticEnergy, potentialEnergy);
+        return ResponseEntity.ok(MechanicalEnergy.calculateMechanicalEnergy(kineticEnergy, potentialEnergy));
     }
 }

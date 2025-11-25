@@ -4,7 +4,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class KineticEnergy {
-    public static String calculateKinectEnergy(double mass, double velocity){
+    public static String calculateKineticEnergy(double mass, double velocity){
         if (mass <= 0){
             return "Mass cannot be equal or minor than zero!";
         }
