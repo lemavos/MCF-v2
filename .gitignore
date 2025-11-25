@@ -1,6 +1,12 @@
 HELP.md
-target/
 !target/*.jar
+target/classes
+target/generated-sources
+generated-test-sources
+maven-archiver
+maven-status
+surefire-reports
+test-classes
 
 
 ### STS ###

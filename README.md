@@ -37,9 +37,14 @@ The API is online for tests on:
 │   │   │   └── com/lemavos/mcf
 │   │   │       ├── McfApplication.java
 │   │   │       ├── controller
-│   │   │       │   └── MathController.java
+│   │   │       │   ├── MathController.java
+│   │   │       │   └── PhysicController.java
 │   │   │       ├── web
 │   │   │       │   └── WebController.java
+│   │   │       ├── exception
+│   │   │       │   └── GlobalExceptionHandler.java
+│   │   │       ├── util
+│   │   │       │   └── ValueValidator.java
 │   │   │       └── services/mathUtils
 │   │   │           ├── Bhaskara.java
 │   │   │           ├── Factorial.java
@@ -91,22 +96,42 @@ The API is online for tests on:
 
 ### On Linux, Windows and MacOS
 
+#### With Java:
+
 1. Make sure Java 17+ is installed:
 ```
 java --version
 ```
-
-Clone the repository:
+2. Clone the repository:
 ```
-git clone https://github.com/lemavos/MCF-SpringBoot-Rest.git
-cd ~/MCF-SpringBoot-Rest/target
+git clone https://github.com/lemavos/MCF-v2.git
+cd ~/MCF-v2/target
 ```
-Run the app:
-
+3. Run the app:
 ```
 java -jar mcf-x.x.x-SNAPSHOT.jar
 ```
-Open the localhost on:
+4. Open the localhost on:
+```
+http://localhost:8080
+```
+
+#### With Docker:
+
+1. Clone the repository:
+```
+git clone https://github.com/lemavos/MCF-v2.git
+cd ~/MCF-v2/target
+```
+2. Copile Dockerfile:
+```
+docker build -t mcf .
+```
+3. Run the app:
+```
+docker run -p 8080:8080 mcf
+```
+4. Open the localhost on:
 ```
 http://localhost:8080
 ```
